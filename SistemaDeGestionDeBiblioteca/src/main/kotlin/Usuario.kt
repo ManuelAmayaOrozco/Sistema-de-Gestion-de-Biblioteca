@@ -1,2 +1,5 @@
-sealed class Usuario(private val id: String, private val nombre: String) {
+sealed class Usuario(val id: String, val nombre: String) {
+
+    abstract fun cogerPrestado(usuario: Usuario, libro: Libro)
+
 }
